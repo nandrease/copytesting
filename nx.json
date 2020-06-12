@@ -25,6 +25,9 @@
     "panel-of-testers-e2e": {
       "tags": [],
       "implicitDependencies": ["panel-of-testers"]
+    },
+    "api": {
+      "tags": []
     }
   }
 }

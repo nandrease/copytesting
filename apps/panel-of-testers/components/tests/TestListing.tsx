@@ -1,5 +1,5 @@
 import React from 'react';
-import { Test } from '../../pages/index'
+import { Test } from '../../../../libs/data/src/lib/data';
 import Link from 'next/link';
 
 const TestListing = ({ test }: { test: Test }) => {

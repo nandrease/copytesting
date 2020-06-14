@@ -4,7 +4,11 @@ import { useRouter } from 'next/router'
 
 const Breadcrumbs = () => {
     const router = useRouter();
-    const steps = router.pathname.split('/').filter(nonEmpty => nonEmpty)
+    const { asPath, query } = router
+    const steps = asPath.split('/').filter(nonEmpty => nonEmpty)
+    if (query.id) {
+        // TODO, change id to title
+    }
 
     const capitalize = (str: string) => (str.charAt(0).toUpperCase() + str.slice(1))
 

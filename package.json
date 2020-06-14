@@ -6,7 +6,7 @@
     "nx": "nx",
     "start:server": "nx serve api",
     "start:frontend": "nx serve panel-of-testers",
-    "start": "npm-run-all --parallel start:frontend start:server",
+    "start": "npm-run-all --parallel start:server start:frontend",
     "build": "nx build",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",

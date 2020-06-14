@@ -17,7 +17,7 @@ const Breadcrumbs = () => {
     }))
 
     return breads.length ? (
-        <div className="container">
+        <div className="container breadcrumbs">
             {breads.map<React.ReactNode>(({ title, url, id }) =>
                 url ? <Link key={id} href={url}><a>{title}</a></Link>
                     : <span key={id}>{title}</span>

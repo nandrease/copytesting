@@ -1,4 +1,5 @@
-export const getGreeting = () => cy.get('h1');
+export const getAvailableTests = () => cy.get('li.new-test');
+export const getPreviousTests = () => cy.get('li.my-test');
 
 export const getLogo = () => cy.get('.navbar-brand');
 export const getHeaderLinks = () => cy.get('.navbar-nav .nav-link');
